@@ -22,6 +22,8 @@ jobs:
       working-directory: ./SimpleProject/
       run: dotnet restore
     - name: Build
+      working-directory: ./SimpleProject/
       run: dotnet build --no-restore
     - name: Test
+      working-directory: ./SimpleProject/
       run: dotnet test --no-build --verbosity normal
